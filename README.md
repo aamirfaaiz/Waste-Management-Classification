@@ -5,7 +5,7 @@ Classification model based on InceptionV3
 
 ## DATASET
 
-The dataset is available in kaggle. The link is available below <br>
+The dataset is available on kaggle:  <br>
 https://www.kaggle.com/techsash/waste-classification-data
 
 
