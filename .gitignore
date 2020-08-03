@@ -1,0 +1,7 @@
+*.pyc
+__pycache__
+__pycache__/*
+im3.png.sb-adecae0c-RYyUx6
+pics
+venv
+.DS_Store
