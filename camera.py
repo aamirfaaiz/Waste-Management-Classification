@@ -3,7 +3,7 @@ from model import WasteManagementModel
 import numpy as np
 import tensorflow as tf
 
-wastec = cv2.CascadeClassifier('haarcascade_frontalface_default.xml')
+wastec = cv2.CascadeClassifier('') # need to find/build own haarcascade!
 model = WasteManagementModel("waste_management_model_inception")
 font = cv2.FONT_HERSHEY_SIMPLEX
 
@@ -19,7 +19,7 @@ class VideoCamera(object):
         _, fr = self.video.read()
         wastes = wastec.detectMultiScale(fr, 1.3, 5)
 
-        for (x, y, w, h) in faces:
+        for (x, y, w, h) in wastes:
             fc = gray_fr[y:y+h, x:x+w]
 
             roi = cv2.resize(fc, (299, 299))
